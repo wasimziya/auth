@@ -29,7 +29,6 @@ router.post('/register', (req, res, next) => {
     });
 });
 
-
 router.get('/login', (req, res) => {
     res.render('login', { user : req.user, error : req.flash('error')});
 });
